@@ -64,6 +64,9 @@ header > p > a{
     background-attachment: fixed;
     height: 69vw;
     position: relative;
+    -webkit-background-site:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
 }
 
 .img1 > p{
