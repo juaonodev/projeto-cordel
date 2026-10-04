@@ -5,137 +5,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
---fonte-titulo:"Passion One", sans-serif;
---fonte-principal: "Sriracha", cursive;
+    --font-titulo: "Passion One", sans-serif;
+    --font-texto: "Sriracha", cursive;
+    --font-geral: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* FORMATAÇÃO GERAL */
 
 *{
     margin: 0px;
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
 a:hover{
     text-decoration: underline;
 }
 
+
+/* CABEÇALHO */
+
 header{
-    background-color: black;
-    color:white;
-    padding:5vw;
-}
-
-header h1 {
-    font-family: var(--fonte-titulo);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: var(--font-geral);
     text-align: center;
-    font-size: 7vw;
 }
 
-span{
+header > h1{
+    font-family: var(--font-titulo);
+    font-variant: small-caps;
+    padding-top: 50px;
     font-size: 10vw;
-}
-
-header > p{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header > p > a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
-.art1 > p{
-    font-family: var(--fonte-principal);
+header p{
+    font-family: var(--font-geral);
+    padding-bottom: 50px;
+
+    
+}
+
+/* CORPO DO SITE */
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
     font-size: 3.5vw;
-    text-align: left;
-    margin: 10vh 3vh 20vh 3vh ; 
-    line-height: 2;
+    font-family: var(--font-texto);
     
-    }
+}
 
-.img1{
-    background-image: url(../imagens/background001.jpg);
-    background-position: center right;
-    background-repeat: no-repeat;
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+    
+}
+
+section.image{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.705);
     background-size: cover;
     background-attachment: fixed;
-    height: 69vw;
-    position: relative;
-    -webkit-background-site:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
+    
 }
 
-.img1 > p{
-    background-color: rgba(0, 0, 0, 0.534);
+section.image > p{
+    background-color: rgba(0, 0, 0, 0.548);
     color: white;
-    font-family: var(--fonte-principal);
-    font-size: 3.5vw;
-    text-align: left;
-    line-height: 2;
-    position: absolute;
-    margin: 10vh 3vh 20vh 3vh;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.411);
+}
+
+section#img01{
+    background-image: url(/imagens/background001.jpg);
+    background-position: right center;
     
 }
 
-.art2 > p{
-    font-family: var(--fonte-principal);
-    font-size: 3.5vw;
-    text-align: left;
-    margin: 10vh 3vh 20vh 3vh ; 
-    line-height: 2;
+section#img02{
+    background-image: url(/imagens/background002.jpg);
+    background-position: center;
     
 }
 
-.img2{
-    background-image: url(../imagens/background002.jpg); 
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 69vw;
-    position: relative;
-    
-}
+/* FINAL DO SITE */
 
-.img2 > p{
-    background-color: rgba(0, 0, 0, 0.534);
+footer{
     color: white;
-    font-family: var(--fonte-principal);
-    font-size: 3.5vw;
-    text-align: left;
-    line-height: 2;
-    position: absolute;
-    margin: 10vh 3vh 20vh 3vh;
-    
-}
-
-.art3 > p{
-    font-family: var(--fonte-principal);
-    font-size: 3.5vw;
-    text-align: left;
-    margin: 10vh 3vh 20vh 3vh ; 
-    line-height: 2;
-    
-}
-
-footer {
+    font-family: var(--font-geral);
     background-color: black;
-    color: white;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
 }
 
-.link2{
-    text-decoration: none;
-    color: white;
-}
 
-.link3 {
-    text-decoration: none;
-    color: white;
-}
